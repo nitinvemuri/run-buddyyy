@@ -1,0 +1,23 @@
+
+  .page-title {
+      color:#fce138;
+      display: inline-block;
+      border-bottom: 4px solid;
+  }
+
+  .hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero {
+    background-image: url(../assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
