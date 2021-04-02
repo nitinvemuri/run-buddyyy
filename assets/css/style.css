@@ -15,6 +15,17 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%
 }
 
 header h1 {
@@ -50,6 +61,7 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -57,6 +69,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
 * {
@@ -105,6 +118,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 /* Hero Style End */
 
@@ -121,6 +136,7 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0, 0, 10px rgb (0, 0, 0, 0.25);
 }
 
 .hero-form {
@@ -145,7 +161,28 @@ section {
   background-color: #fce138;
   padding: 20px;
   color: #024e76;
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+/* default state */
+button {
+  background: white;
+}
+
+/* mouse is hovering over button */
+button:hover {
+  background: red;
+}
+
+/* button is in focus because it was the most recently clicked element on the page */
+button:focus {
+  background: green;
+}
+
+/* user is actively pressing the cursor down on the button */
+button:active {
+  background: blue;
 }
 
 /* Hero Style Start */
@@ -404,6 +441,67 @@ section {
   display: flex;
 }
 
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px black;
+}
+
+.form-input {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.hero-form button {
+  background-color: #39a6b2
+}
+
+.contact-form input, .contact-form textarea {
+
+}
+
+.contact-form input, .contact-form textarea:focus {
+
+}
+
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+  
+
+.contact-form button {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+.step {
+  /* re-add alongside existing declarations */
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 /* Media query for smaller desktop screens and smaller*/
 @media screen and (max-width: 980px) {
     header {
@@ -521,7 +619,6 @@ section {
   .contact-form {
     order: 3;
   }
-}
-/* REACH OUT STYLES END */
+}/* REACH OUT STYLES END */
 
 
