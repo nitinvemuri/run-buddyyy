@@ -511,7 +511,7 @@ section {
   }
 
   .contact-info {
-    text-align: center;
+    text-align:center;
   }
 
   .contact-info > * {
@@ -519,7 +519,7 @@ section {
   }
 
   .contact-form {
-    order: 3;
+    order:3;
   }
 }
 /* REACH OUT STYLES END */
