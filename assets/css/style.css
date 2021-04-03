@@ -1,6 +1,5 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-   tomato
 }
 
 body{
@@ -234,7 +233,7 @@ button:active {
   width: 100%;
   margin-bottom: 15px;
 }
-}
+
 
 .hero-form label {
   margin: 0 5px;
@@ -330,9 +329,7 @@ button:active {
   max-width: 100%
 }
 
-.trainer {
-  
-}
+
 
 .trainer {
   margin: 0 auto 20px auto;
@@ -480,13 +477,7 @@ button:active {
   background-color: #39a6b2
 }
 
-.contact-form input, .contact-form textarea {
-/* /* add * */
-}
 
-.contact-form input, .contact-form textarea:focus {
-/* add */
-}
 
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
